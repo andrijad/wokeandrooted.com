@@ -22,11 +22,14 @@ p{margin-top:16px;font-size:clamp(1.02rem,3.6vw,1.18rem);line-height:1.6;max-wid
 .sprig{position:fixed;width:min(520px,90vw);height:auto;right:-14%;bottom:-12%;fill:var(--green);opacity:.08;transform:rotate(-12deg);pointer-events:none;z-index:0}
 footer{margin-top:44px;font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);opacity:.75}
 @media (max-width:480px){.sprig{right:-30%;bottom:-8%}.rule{margin:22px 0 20px}}
-.cta{margin-top:32px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.cta{margin-top:32px;display:flex;flex-direction:column;align-items:center;gap:12px}
 .cta small{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green);opacity:.8}
 .btn{display:inline-block;background:var(--green);color:var(--beige);text-decoration:none;font-size:1.05rem;letter-spacing:.03em;padding:15px 30px;border-radius:999px;min-height:48px;transition:background .2s,transform .2s}
 .btn:hover,.btn:focus-visible{background:var(--terra);transform:translateY(-1px)}
 .btn:focus-visible{outline:2px solid var(--terra);outline-offset:3px}
+.btn-alt{background:transparent;color:var(--green);box-shadow:inset 0 0 0 1.5px var(--green)}
+.btn-alt:hover,.btn-alt:focus-visible{background:var(--terra);color:var(--beige);box-shadow:none}
+.cta .note{font-size:.92rem;opacity:.85;max-width:26em;line-height:1.5}
 @media (max-width:480px){.btn{width:100%;max-width:320px}}
 </style>
 </head>
@@ -37,7 +40,10 @@ footer{margin-top:44px;font-size:.85rem;letter-spacing:.14em;text-transform:uppe
 <div class="rule"></div>
 <h1>Uskoro</h1>
 <p>Novi sajt je u pripremi. Hvala na strpljenju — vidimo se uskoro.</p>
-<div class="cta"><small>Prijave su već otvorene</small><a class="btn" href="https://prijave.wokeandrooted.com">Prijavi se za jogu i radionice →</a></div>
+<div class="cta"><small>Prijave su već otvorene</small>
+<a class="btn" href="https://prijave.wokeandrooted.com">Prijavi se za jogu i radionice →</a>
+<a class="btn btn-alt" href="https://prijave.wokeandrooted.com/seanse">Pošalji upit za 1 na 1 seansu</a>
+<span class="note">Psihoterapija, teta terapija i individualni rad — bez registracije.</span></div>
 <footer>Woke &amp; Rooted</footer>
 </main>
 </body>
